@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-demo" version="1.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-demo" version="1.0.0">
+    <name>MyPluginDemo</name>
+    <js-module name="MyPluginDemo" src="www/MyPluginDemo.js">
+        <clobbers target="cordova.plugins.MyPluginDemo" />
+    </js-module>
+    
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="MyPluginDemo">
+                <param name="ios-package" value="MyPluginDemo"/>
+            </feature>
+        </config-file>
+        <!--<header-file src="src/ios/Flurry.h" />-->
+        <header-file src="src/ios/FlurryAnalyticsPlugin.h"/>
+        <source-file src="src/ios/FlurryAnalyticsPlugin.m"/>
+        <pod id="Flurry-iOS-SDK/FlurrySDK"/>
+    </platform>
+    
+</plugin>

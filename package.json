@@ -1,0 +1,25 @@
+{
+  "name": "crodova-plugin-zxxdemo",
+  "version": "1.0.1",
+  "description": "test for cordova plugin development",
+  "cordova": {
+    "id": "cordova-plugin-demo",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheerszhou/CordovaPulginForTest.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "zhouxingxing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cheerszhou/CordovaPulginForTest/issues"
+  },
+  "homepage": "https://github.com/cheerszhou/CordovaPulginForTest#readme"
+}
